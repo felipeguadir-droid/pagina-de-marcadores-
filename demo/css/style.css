@@ -1,0 +1,600 @@
+/* =====================================
+   MARKO'S | ESTILO GENERAL
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --rosa: #6aff5c;
+    --rosa-claro: #ffe0f1;
+    --lila: #d9c4ff;
+    --azul: #b9edfa;
+    --menta: #c9f4e5;
+    --amarillo: #ffe7a3;
+    --oscuro: #29243d;
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #fff8fc;
+    color: var(--oscuro);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+header {
+    width: 94%;
+    max-width: 1450px;
+    margin: 18px auto;
+    padding: 14px 25px;
+    background: white;
+    border: 2px solid #ffcae3;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px #e8b8d530;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.7rem;
+    font-weight: 990;
+}
+
+.logo img {
+    width: 90px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 25px;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    background: var(--rosa);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   INICIO / BANNER PRINCIPAL
+===================================== */
+
+.hero {
+    width: 92%;
+    max-width: 1400px;
+    min-height: 330px;
+    margin: 25px auto 40px;
+    padding: 45px 7%;
+    border: 2px solid #f5d2ec;
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at 90% 15%, #ffe7a3 0 8%, transparent 8.5%),
+        radial-gradient(circle at 8% 10%, #d9c4ff 0 11%, transparent 11.5%),
+        linear-gradient(120deg, #ffe1f1, #f9f0ff 48%, #c9f4fa);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px #c18bb31c;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: var(--rosa);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Botones generales */
+
+.boton,
+.btn-comprar {
+    display: inline-block;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff80b5, #f52e80);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #d82a70;
+    transition: 0.25s ease;
+}
+
+.boton:hover,
+.btn-comprar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 16px #f52e8040;
+}
+
+/* Marcador decorativo 3D */
+
+.marcador-3d {
+    position: relative;
+    flex-shrink: 0;
+    width: 65px;
+    height: 210px;
+    margin: 25px 55px;
+    border-radius: 20px 20px 12px 12px;
+    background: linear-gradient(
+        90deg,
+        #c82d82,
+        #ff70b2 25%,
+        #ffadd5 48%,
+        #f94c9a 75%,
+        #c82d82
+    );
+    box-shadow:
+        12px 18px 20px #8e4b7950,
+        inset 5px 0 8px #ffffff70,
+        inset -5px 0 8px #7e164a40;
+    transform: rotate(25deg);
+    transition: transform 0.4s ease;
+}
+
+.marcador-3d::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 9px;
+    width: 47px;
+    height: 38px;
+    border-radius: 12px 12px 4px 4px;
+    background: linear-gradient(90deg, #b51e6a, #ff90c5, #d82a79);
+}
+
+.marcador-3d::after {
+    content: "MARKO'S";
+    position: absolute;
+    top: 85px;
+    left: -9px;
+    width: 83px;
+    padding: 5px 0;
+    background: #fff5fa;
+    color: var(--oscuro);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.marcador-3d:hover {
+    transform: rotate(12deg) translateY(-10px);
+}
+
+/* =====================================
+   SECCIÓN DE PRODUCTOS
+===================================== */
+
+#productos {
+    width: 92%;
+    max-width: 1400px;
+    margin: 45px auto;
+    padding: 35px;
+    background: white;
+    border: 2px solid #f4d5ea;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px #70426912;
+}
+
+#productos h2,
+#contacto h2 {
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777087;
+    margin-bottom: 30px;
+}
+
+/* Tres columnas */
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Tarjetas */
+
+.productos-card {
+    min-width: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: linear-gradient(145deg, #ffffff, #fff0f8);
+    border: 2px solid #f3c7e4;
+    border-radius: 24px;
+    box-shadow: 0 7px 18px #4b304b14;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productos-card:nth-child(2) {
+    background: linear-gradient(145deg, white, #e6fbfa);
+    border-color: #a7e9e7;
+}
+
+.productos-card:nth-child(3) {
+    background: linear-gradient(145deg, white, #f2eaff);
+    border-color: #d7c1ff;
+}
+
+.productos-card:nth-child(4) {
+    background: linear-gradient(145deg, white, #fff7df);
+    border-color: #ffe19a;
+}
+
+.productos-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 30px #7b548b25;
+}
+
+/* Imágenes de cada producto */
+
+.imagenes-producto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.imagenes-producto img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    background: white;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-producto img + img {
+    height: 130px;
+}
+
+.productos-card:hover .imagenes-producto img {
+    transform: scale(1.02);
+}
+
+.productos-card h3 {
+    font-size: 1.15rem;
+    font-weight: 900;
+    margin: 8px 0;
+}
+
+.productos-card .precio {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background: var(--rosa);
+    color: white;
+    font-weight: 900;
+    margin: 5px 0 10px;
+}
+
+.productos-card .descripcion {
+    color: #625c70;
+    margin-bottom: 18px;
+}
+
+/* Botón al fondo de la tarjeta */
+
+.productos-card .btn-comprar {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+.productos-card .btn-comprar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #c92569;
+}
+
+/* =====================================
+   CONTACTO
+===================================== */
+
+#contacto {
+    width: 92%;
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #fff0f8, #f1eaff, #e9fbfc);
+    border: 2px solid #e8c8eb;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px #80638b15;
+}
+
+.contacto-intro {
+    text-align: center;
+    color: #6b637a;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    display: grid;
+    gap: 15px;
+    max-width: 650px;
+    margin: 25px auto 0;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #eaddeb;
+    border-radius: 14px;
+    outline: none;
+    background: white;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: var(--rosa);
+    box-shadow: 0 0 0 4px #ff5c9a20;
+}
+
+#contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contacto form button {
+    padding: 13px;
+    border: none;
+    border-radius: 15px;
+    background: var(--oscuro);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#contacto form button:hover {
+    background: #5b477f;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   PIE DE PÁGINA Y REDES
+===================================== */
+
+footer {
+    width: 92%;
+    max-width: 1400px;
+    margin: 40px auto 20px;
+    padding: 30px;
+    background: linear-gradient(110deg, #eadfff, #ffe4f2);
+    border: 2px solid #d5bbff;
+    border-radius: 25px;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.footer-marca h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.footer-marca p {
+    color: #625875;
+    margin-top: 8px;
+}
+
+.footer-contacto h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.footer-contacto p {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.footer-contacto a {
+    color: #9e3278;
+    font-weight: 800;
+}
+
+.footer-contacto a:hover {
+    text-decoration: underline;
+}
+
+.footer-final {
+    text-align: center;
+    border-top: 1px solid #d7c1e5;
+    margin-top: 25px;
+    padding-top: 18px;
+}
+
+.volver-arriba {
+    display: inline-block;
+    margin-top: 8px;
+    color: #9e3278;
+    font-weight: 900;
+}
+
+/* =====================================
+   RESPONSIVE: TABLETAS
+===================================== */
+
+@media (max-width: 900px) {
+    .productos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 35px;
+    }
+
+    #productos {
+        padding: 25px;
+    }
+}
+
+/* =====================================
+   RESPONSIVE: CELULARES
+===================================== */
+
+@media (max-width: 600px) {
+    header {
+        width: 94%;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .logo {
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 55px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .nav-links a {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .hero,
+    #productos,
+    #contacto,
+    footer {
+        width: 94%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .marcador-3d {
+        margin: 35px 0 20px;
+    }
+
+    #productos,
+    #contacto {
+        padding: 20px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .imagenes-producto img {
+        height: 240px;
+    }
+
+    .imagenes-producto img + img {
+        height: 180px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+           /*sobre nosotros*/
+           .imagen-nosotros{
+            width: 1oo%;
+            max-width: 500px;
+            height: 320px;
+            object-fit:cover;
+            border-radius:20px
+            display:block;
+            margin: 20px auto;
+            box-shadow: 0 8px 20px rgba(32,36,61,0.15);
+
+           }

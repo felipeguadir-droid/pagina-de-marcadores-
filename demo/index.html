@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MARKO'S | Tienda de marcadores</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                MARKO'S
+                <img src="imagenes/logo.jpeg" alt="Logo de MARKO'S">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="nosotros.html#quienes-somos">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Tus ideas merecen <span>más color</span></h1>
+
+                <p>
+                    Descubre marcadores para estudiar, dibujar,
+                    diseñar y crear sin límites.
+                </p>
+
+                <a href="#productos" class="boton">
+                    Explorar productos →
+                </a>
+            </div>
+
+            <div class="marcador-3d" aria-label="Marcador decorativo"></div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section id="productos">
+            <h2>Productos destacados</h2>
+
+            <p class="subtitulo">
+                Encuentra tus colores favoritos y deja volar tu creatividad.
+            </p>
+
+            <div class="productos-grid">
+
+                <!-- PRODUCTO 1 -->
+                <article class="productos-card">
+                    <div class="imagenes-producto">
+                        <img src="imagenes/metalicos mk.jpg"
+                             alt="Kit de marcadores metálicos">
+                    </div>
+
+                    <h3>Marcadores punta fina</h3>
+                    <p class="precio">$19.500</p>
+
+                    <p class="descripcion">
+                        Kit de 10 colores metálicos con punta delgada.
+                    </p>
+
+                    <button class="btn-comprar"
+                        onclick="comprar('Marcadores punta fina', 19500)">
+                        🛒 Comprar
+                    </button>
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article class="productos-card">
+                    <div class="imagenes-producto">
+                        <img src="imagenes/punta gruesa mk.jpg"
+                             alt="Kit de marcadores de punta gruesa">
+                    </div>
+
+                    <h3>Marcadores punta gruesa</h3>
+                    <p class="precio">$15.600</p>
+
+                    <p class="descripcion">
+                        Kit de 4 marcadores. ¡Elige los colores que deseas!
+                    </p>
+
+                    <button class="btn-comprar"
+                        onclick="comprar('Marcadores punta gruesa', 15600)">
+                        🛒 Comprar
+                    </button>
+                </article>
+
+                <!-- PRODUCTO 3 -->
+                <article class="productos-card">
+                    <div class="imagenes-producto">
+                        <img src="imagenes/sellos mk.jpg"
+                             alt="Marcadores con sellos de caritas">
+
+                        <img src="imagenes/individual mk.jpg"
+                             alt="Marcador borrable azul">
+                    </div>
+
+                    <h3>Marcadores con sellos</h3>
+                    <p class="precio">$20.900</p>
+
+                    <p class="descripcion">
+                        Kit de 3 marcadores con sellos de caritas
+                        y un marcador borrable.
+                    </p>
+
+                    <button class="btn-comprar"
+                        onclick="comprar('Marcadores con sellos', 20900)">
+                        🛒 Comprar
+                    </button>
+                </article>
+
+                <!-- PRODUCTO 4 -->
+                <article class="productos-card">
+                    <div class="imagenes-producto">
+                        <img src="imagenes/decorativos mk.jpg"
+                             alt="Marcadores decorativos de colores">
+
+                        <img src="imagenes/creativo mk.jpg"
+                             alt="Marcadores artísticos de doble punta">
+                    </div>
+
+                    <h3>Marcadores artísticos</h3>
+                    <p class="precio">$56.000</p>
+
+                    <p class="descripcion">
+                        Kit de 12 colores artísticos de doble punta.
+                    </p>
+
+                    <button class="btn-comprar"
+                        onclick="comprar('Marcadores artísticos', 56000)">
+                        🛒 Comprar
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO Y FORMULARIO -->
+        <section id="contacto">
+            <h2>Hablemos de colores 💌</h2>
+
+            <p class="contacto-intro">
+                ¿Tienes dudas sobre nuestros productos?
+                Escríbenos y conoce más de MARKO'S.
+            </p>
+
+            <form id="form-contacto">
+                <input type="text" name="nombre"
+                       placeholder="Tu nombre" required>
+
+                <input type="email" name="email"
+                       placeholder="Tu correo electrónico" required>
+
+                <textarea name="mensaje"
+                          placeholder="Escribe tu mensaje"
+                          required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-contenido">
+
+            <div class="footer-marca">
+                <h2>MARKO'S 🎨</h2>
+                <p>
+                    Dale color a tus ideas.
+                    Inspira, crea y expresa tu imaginación.
+                </p>
+            </div>
+
+            <div class="footer-contacto">
+                <h3>Contáctanos</h3>
+
+                <p>
+                    📸 Instagram:
+                    <a href="https://www.instagram.com/markos/"
+                       target="_blank" rel="noopener noreferrer">
+                        @markos
+                    </a>
+                </p>
+
+                <p>
+                    ✉️ Correo:
+                    <a href="mailto:markos.@gmail.com">
+                        markos.@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    📱 Celular:
+                    <span>324 000 0000 (ejemplo)</span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            <p>&copy; 2026 MARKO'S - Tienda de marcadores</p>
+            <a class="volver-arriba" href="#inicio">↑ Volver arriba</a>
+        </div>
+    </footer>
+
+    <!-- FUNCIONES DE DEMOSTRACIÓN -->
+    <script>
+        function comprar(producto, precio) {
+            const confirmar = confirm(
+                "¡Bienvenido a MARKO'S! 🎨\n\n" +
+                "Producto: " + producto + "\n" +
+                "Precio: $" + precio.toLocaleString("es-CO") +
+                "\n\n¿Deseas simular la compra?"
+            );
+
+            if (confirmar) {
+                alert(
+                    "¡Excelente elección! 💖\n\n" +
+                    "Has seleccionado: " + producto +
+                    "\nTotal simulado: $" +
+                    precio.toLocaleString("es-CO") +
+                    "\n\nEsta es una demostración académica. " +
+                    "No se ha realizado ningún pago."
+                );
+            }
+        }
+
+        document.getElementById("form-contacto")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                alert(
+                    "¡Gracias por escribir a MARKO'S! 💌\n\n" +
+                    "Este formulario es una demostración. " +
+                    "Todavía no envía mensajes reales."
+                );
+
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
